@@ -1,0 +1,24 @@
+GET http://localhost:4201/api/products
+
+###
+
+
+POST http://localhost:4201/api/products
+Content-Type: application/json
+
+{
+  "name": "{{$random.alphabetic(5)}}", "unitPrice" : {{ $randomInt }}
+}
+
+###
+
+
+
+PUT http://localhost:4201/api/products/vk5k6snq67qrqzylmzmlr4ap
+Content-Type: application/json
+
+{
+  "name": "patched"
+}
+
+###
